@@ -1,5 +1,5 @@
 {
-  "name": "hitori",
+  "name": "daemon",
   "version": "1.0.3",
   "description": "Bot WhatsApp Using Lib Baileys Multi Device",
   "main": "start.js",
@@ -13,7 +13,7 @@
     "bot-wa",
     "multi-device"
   ],
-  "author": "Nazedev",
+  "author": "pharouk",
   "license": "MIT",
   "dependencies": {
     "@hapi/boom": "^10.0.0",
