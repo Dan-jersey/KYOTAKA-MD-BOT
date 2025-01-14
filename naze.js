@@ -1,3 +1,25 @@
+			<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    body {
+      background-color: black;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: aliceblue;
+      
+      
+    }
+  </style>
+</head>
+<body>
+    
+
+<script>
 process.on('uncaughtException', console.error)
 process.on('unhandledRejection', console.error)
 
@@ -2571,29 +2593,29 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 					profile = fake.anonim
 				}
 				const menunya = `
-╭──❍「 *KYOTAKA* 」❍
-├ *NOM* : ${m.pushName ? m.pushName : 'Tanpa Nama'}
+╭──❍「 *KYOTAKA-MD* 」❍
+├ *NOM* : ${m.pushName ? m.pushName : 'sans nom'}
 ├ *Id* : @${m.sender.split('@')[0]}
-├ *UTILISATEUR* : ${isVip ? 'VIP' : isPremium ? 'PREMIUM' : 'FREE'}
-├ *Limit* : ${isVip ? 'VIP' : db.users[m.sender].limit }
+├ *UTILISATEUR* : ${isVip ? 'VIP' : isPremium ? 'PREMIUME' : 'LIBRE'}
+├ *Limite* : ${isVip ? 'VIP' : db.users[m.sender].limit }
 ├ *Uang* : ${db.users[m.sender] ? db.users[m.sender].uang.toLocaleString('id-ID') : '0'}
 ╰─┬────❍
 ╭─┴─❍「 *BOT INFO* 」❍
-├ *NOM DU BOR* : ${botname}
-├ *Powered* : @${'0@s.whatsapp.net'.split('@')[0]}
-├ *Owner* : @${owner[0].split('@')[0]}
+├ *NOM DU BOT* : ${botname}
+├ *PROPULS2* : @${'0@s.whatsapp.net'.split('@')[0]}
+├ *propriétaire* : @${owner[0].split('@')[0]}
 ├ *Mode* : ${naze.public ? 'Public' : 'Self'}
 ├ *Prefix* :${db.set[botNumber].multiprefix ? '「 MULTI-PREFIX 」' : ' *'+prefix+'*' }
 ╰─┬────❍
-╭─┴─❍「 *ABOUT* 」❍
-├ *Tanggal* : ${tanggal}
-├ *Hari* : ${hari}
-├ *Jam* : ${jam} WIB
+╭─┴─❍「 *A PROPOS* 」❍
+├ *DATE* : ${tanggal}
+├ *JOUR* : ${hari}
+├ *HEURE* : ${jam} UTC+1
 ╰──────❍
 ╭──❍「 *BOT* 」❍
 │${setv} ${prefix}profile
 │${setv} ${prefix}claim
-│${setv} ${prefix}buy [item] (nominal)
+│${setv} ${prefix}buy [item] 
 │${setv} ${prefix}transfer
 │${setv} ${prefix}leaderboard
 │${setv} ${prefix}request (text)
@@ -2603,44 +2625,44 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 │${setv} ${prefix}totalfitur
 │${setv} ${prefix}ping
 │${setv} ${prefix}afk
-│${setv} ${prefix}rvo (reply pesan viewone)
+│${setv} ${prefix}rvo 
 │${setv} ${prefix}inspect (url gc)
 │${setv} ${prefix}addmsg
 │${setv} ${prefix}delmsg
 │${setv} ${prefix}getmsg
 │${setv} ${prefix}listmsg
 │${setv} ${prefix}q (reply pesan)
-│${setv} ${prefix}menfes (62xxx|fake name)
+│${setv} ${prefix}menfes 
 │${setv} ${prefix}donasi
 ╰─┬────❍
 ╭─┴❍「 *GROUP* 」❍
-│${setv} ${prefix}add (62xxx)
-│${setv} ${prefix}kick (@tag/62xxx)
-│${setv} ${prefix}promote (@tag/62xxx)
-│${setv} ${prefix}demote (@tag/62xxx)
-│${setv} ${prefix}setname (nama baru gc)
-│${setv} ${prefix}setdesc (desk)
-│${setv} ${prefix}setppgc (reply imgnya)
-│${setv} ${prefix}delete (reply pesan)
+│${setv} ${prefix}add 
+│${setv} ${prefix}kick 
+│${setv} ${prefix}promote 
+│${setv} ${prefix}demote 
+│${setv} ${prefix}setname 
+│${setv} ${prefix}setdesc 
+│${setv} ${prefix}setppgc 
+│${setv} ${prefix}delete 
 │${setv} ${prefix}linkgrup
 │${setv} ${prefix}revoke
 │${setv} ${prefix}tagall
 │${setv} ${prefix}hidetag
-│${setv} ${prefix}totag (reply pesan)
+│${setv} ${prefix}totag 
 │${setv} ${prefix}listonline
 │${setv} ${prefix}group set
 ╰─┬────❍
 ╭─┴❍「 *SEARCH* 」❍
-│${setv} ${prefix}ytsearch (query)
-│${setv} ${prefix}pixiv (query)
-│${setv} ${prefix}pinterest (query)
-│${setv} ${prefix}wallpaper (query)
-│${setv} ${prefix}ringtone (query)
-│${setv} ${prefix}google (query)
-│${setv} ${prefix}gimage (query)
-│${setv} ${prefix}npm (query)
-│${setv} ${prefix}style (query)
-│${setv} ${prefix}cuaca (kota)
+│${setv} ${prefix}ytsearch 
+│${setv} ${prefix}pixiv 
+│${setv} ${prefix}pinterest 
+│${setv} ${prefix}wallpaper 
+│${setv} ${prefix}ringtone 
+│${setv} ${prefix}google 
+│${setv} ${prefix}gimage 
+│${setv} ${prefix}npm 
+│${setv} ${prefix}style 
+│${setv} ${prefix}cuaca 
 ╰─┬────❍
 ╭─┴❍「 *DOWNLOAD* 」❍
 │${setv} ${prefix}ytmp3 (url)
@@ -2658,28 +2680,28 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 ╰─┬────❍
 ╭─┴❍「 *TOOLS* 」❍
 │${setv} ${prefix}get (url)
-│${setv} ${prefix}hd (reply pesan)
-│${setv} ${prefix}toaudio (reply pesan)
-│${setv} ${prefix}tomp3 (reply pesan)
-│${setv} ${prefix}tovn (reply pesan)
-│${setv} ${prefix}toimage (reply pesan)
-│${setv} ${prefix}toptv (reply pesan)
-│${setv} ${prefix}tourl (reply pesan)
-│${setv} ${prefix}tts (textnya)
-│${setv} ${prefix}toqr (textnya)
+│${setv} ${prefix}hd 
+│${setv} ${prefix}toaudio 
+│${setv} ${prefix}tomp3 
+│${setv} ${prefix}tovn 
+│${setv} ${prefix}toimage 
+│${setv} ${prefix}toptv 
+│${setv} ${prefix}tourl 
+│${setv} ${prefix}tts 
+│${setv} ${prefix}toqr 
 │${setv} ${prefix}ssweb (url)
-│${setv} ${prefix}sticker (send/reply img)
-│${setv} ${prefix}colong (reply stiker)
-│${setv} ${prefix}smeme (send/reply img)
+│${setv} ${prefix}sticker 
+│${setv} ${prefix}colong 
+│${setv} ${prefix}smeme 
 │${setv} ${prefix}emojimix 🙃+💀
 │${setv} ${prefix}nulis
 │${setv} ${prefix}readmore text1|text2
-│${setv} ${prefix}qc (pesannya)
+│${setv} ${prefix}qc 
 │${setv} ${prefix}translate
 │${setv} ${prefix}wasted (send/reply img)
 │${setv} ${prefix}triggered (send/reply img)
-│${setv} ${prefix}shorturl (urlnya)
-│${setv} ${prefix}gitclone (urlnya)
+│${setv} ${prefix}shorturl 
+│${setv} ${prefix}gitclone 
 │${setv} ${prefix}fat (reply audio)
 │${setv} ${prefix}fast (reply audio)
 │${setv} ${prefix}bass (reply audio)
@@ -2695,9 +2717,9 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 │${setv} ${prefix}getexif (reply sticker)
 ╰─┬────❍
 ╭─┴❍「 *AI* 」❍
-│${setv} ${prefix}ai (query)
-│${setv} ${prefix}simi (query)
-│${setv} ${prefix}txt2img (query)
+│${setv} ${prefix}ai 
+│${setv} ${prefix}simi 
+│${setv} ${prefix}txt2img 
 ╰─┬────❍
 ╭─┴❍「 *ANIME* 」❍
 │${setv} ${prefix}waifu
@@ -2708,10 +2730,10 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 │${setv} ${prefix}akinator
 │${setv} ${prefix}suit
 │${setv} ${prefix}slot
-│${setv} ${prefix}math (level)
+│${setv} ${prefix}math 
 │${setv} ${prefix}begal
-│${setv} ${prefix}casino (nominal)
-│${setv} ${prefix}rampok (@tag)
+│${setv} ${prefix}casino 
+│${setv} ${prefix}rampok 
 │${setv} ${prefix}tekateki
 │${setv} ${prefix}tebaklirik
 │${setv} ${prefix}tebakkata
@@ -2729,10 +2751,10 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 │${setv} ${prefix}apakah (text)
 │${setv} ${prefix}kapan (text)
 │${setv} ${prefix}kerangajaib (text)
-│${setv} ${prefix}cekmati (nama lu)
+│${setv} ${prefix}cekmati 
 │${setv} ${prefix}ceksifat
-│${setv} ${prefix}cekkhodam (nama lu)
-│${setv} ${prefix}rate (reply pesan)
+│${setv} ${prefix}cekkhodam 
+│${setv} ${prefix}rate 
 │${setv} ${prefix}jodohku
 │${setv} ${prefix}jadian
 │${setv} ${prefix}fitnah
@@ -2771,7 +2793,7 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 │${setv} $
 │${setv} >
 │${setv} <
-╰──────❍`
+╰──────❍`Dan jersey
 				await naze.sendMessage(m.chat, {
 					document: fake.docs,
 					fileName: ucapanWaktu,
